@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.litekey.cordova.plugins.heartbeat": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.litekey.cordova.plugins.heartbeat/www/heartbeat.js",
+            "id": "com.litekey.cordova.plugins.heartbeat.heartbeat",
+            "pluginId": "com.litekey.cordova.plugins.heartbeat",
+            "clobbers": [
+                "heartbeat"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.0",
+        "com.litekey.cordova.plugins.heartbeat": "0.2.2"
+    }
+}
