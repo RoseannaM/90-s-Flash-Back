@@ -100,12 +100,12 @@ h1 {
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
-    background-color: #46B6AC;
+    background-color: #D1C4E9;
 }
 .demo-card-square > .mdl-card__supporting-text{
     color: #FFFFFF;
     font-weight: bold;
-    background-color: #607D8B;
+    background-color: #727272;
     width: 100%;
 }
 
@@ -115,10 +115,18 @@ h1 {
     width:100px;
 }
 
+.demo-card-square > .mdl-button.mdl-button--accent {
+    height: 100px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #512DA8;
+}
+
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
-    color:#FFFFFF;
+    color: #ffffff;
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
