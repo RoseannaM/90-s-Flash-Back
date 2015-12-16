@@ -120,7 +120,7 @@ h5 {
     width:100px;
 }
 
-.demo-card-square > .mdl-button.mdl-button--accent {
+.mdl-button.mdl-button--accent {
     height: 100px;
     width: 100%;
     color: #ffffff;

@@ -40,8 +40,17 @@ var app = {
 
     onTouch: function(){
         function successCallback(bpm){
-            if (bpm < 90){
-                $("#mood-text").empty().text("Your Mood:" + "SAD");
+            if (bpm <= 55){
+                $("#mood-text").empty().text("Your Mood:" + "Sad");
+            }
+            else if (bpm >= 55 <65) {
+                $("#mood-text").empty().text("Your Mood:" + "Skeptical");
+            }
+            else if (bpm >= 65 <85) {
+                $("#mood-text").empty().text("Your Mood:" + "Happy");
+            }
+            else if (bpm >= 85 <120) {
+                $("#mood-text").empty().text("Your Mood:" + "Excited");
             }
 
         }
@@ -66,6 +75,7 @@ app.initialize();
 
 
 
+
 /*$("#mood-text").empty().text("Your Mood:" + "");*/
 
 /*
@@ -75,4 +85,11 @@ function test(){
 setTimeout(test, 2000);
 */
 
+/*
+/!*(bpm <= 55)*!/ less than or equal to 55
+   (bpm >= 55 && <65)*!/ greater than 55 and less than 65?
 
+
+ x >= y               # x is greater than or equal to y
+ x <= y               # x is less than or equal to y
+*/
