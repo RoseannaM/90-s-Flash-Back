@@ -36,27 +36,36 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        $("#gem-img").attr("src","img/grey-round.png");
     },
 
     onTouch: function(){
         function successCallback(bpm){
             if (bpm <= 55){
-                $("#mood-text").empty().text("Your Mood:" + "Sad");
+                $("#myBtn").empty().text("Your Mood:" + "You are sad. I'm sorry to hear that");
+                $("#gem-img").attr("src","img/blue-round.png");
             }
-            else if (bpm >= 55 <65) {
-                $("#mood-text").empty().text("Your Mood:" + "Skeptical");
+            else if (bpm >= 55 && bpm < 65) {
+                $("#myBtn").empty().text("Your Mood:" + "You seem skeptical, what? this is totally legit");
+                $("#gem-img").attr("src","img/orange-round.png");
             }
-            else if (bpm >= 65 <85) {
-                $("#mood-text").empty().text("Your Mood:" + "Happy");
+            else if (bpm >= 65 && bpm <85) {
+                $("#myBtn").empty().text("Your Mood:" + "You are happy. Good to hear");
+                $("#gem-img").attr("src","img/pink-round.png");
             }
-            else if (bpm >= 85 <120) {
-                $("#mood-text").empty().text("Your Mood:" + "Excited");
+            else if (bpm >= 85 && bpm <120) {
+                $("#myBtn").empty().text("Your Mood:" + "You are very excited, I know, i'm excited too");
+                $("#gem-img").attr("src","img/green-round.png");
             }
-
         }
 
         function errorCallback(){
-            alert("No mood detected");
+            var bpm = 70;
+           /* if (bpm >= 65 && bpm <85) {
+                $("#myBtn").empty().text("Your Mood:" + "You are happy. Good to hear");
+                $("#gem-img").attr("src", "img/pink-round.png");
+            }*/
+           alert("Unable to detect mood");
         }
 
         var props = {

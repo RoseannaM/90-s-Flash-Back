@@ -39,18 +39,14 @@
     </head>
     <body>
     <div class="content-grid mdl-grid">
-        <div class="mdl-cell mdl-cell--12-col">
-            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-                <header class="custom-header mdl-layout__header">
-                    <div class="mdl-layout__header-row">
-                        <!-- Title -->
-                        <span class="custom-title mdl-layout-title">MOOD RING</span>
-                        <!-- Add spacer, to align navigation to the right -->
-                        <div class="mdl-layout-spacer"></div>
-                        <!-- Navigation. We hide it in small screens. -->
-                    </div>
-                </header>
-            </div>
+        <div class="mdl-cell mdl-cell--4-col">
+            <header class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <!-- Title -->
+                <span class="custom-title mdl-layout-title">MOOD RING</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+            </header>
         </div>
         <div class="mdl-cell mdl-cell--4-col">
             </div>
@@ -58,7 +54,7 @@
             <div class="mdl-card mdl-shadow--2dp">
                 <button id ="myBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Place your finger on the camera</button>
                 <div class="mdl-card__title mdl-card--expand">
-                    <img class="gem-img" src="img/blue-round.png">
+                    <img id="gem-img" src="">
                 </div>
                 <div id="mood-text"></div>
             </div>
