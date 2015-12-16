@@ -108,6 +108,11 @@ h1 {
     background-color: #727272;
     width: 100%;
 }
+h5 {
+    color: #FF8888;
+    font-size: small;
+    font-weight: bold;
+}
 
 .gem-img{
     display: block;

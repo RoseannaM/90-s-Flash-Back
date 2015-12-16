@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -34,12 +36,14 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-
     },
 
     onTouch: function(){
         function successCallback(bpm){
-            alert("Your mood is:" + bpm);
+            if (bpm < 90){
+                $("#mood-text").empty().text("Your Mood:" + "SAD");
+            }
+
         }
 
         function errorCallback(){
@@ -57,3 +61,18 @@ var app = {
 };
 
 app.initialize();
+
+
+
+
+
+/*$("#mood-text").empty().text("Your Mood:" + "");*/
+
+/*
+function test(){
+    $("#mood-text").empty().text("HEY, HI HELLO");
+}
+setTimeout(test, 2000);
+*/
+
+
