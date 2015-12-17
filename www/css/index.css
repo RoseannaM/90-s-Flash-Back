@@ -51,7 +51,7 @@ body {
 }
 
 /* Portrait layout (default) */
-/*.app {
+.app {
     background:url(../img/logo.png) no-repeat center top; /!* 170px x 200px *!/
     position:absolute;             /!* position in the center of the screen *!/
     left:50%;
@@ -62,17 +62,17 @@ body {
     padding:180px 0px 0px 0px;     /!* image height is 200px (bottom 20px are overlapped with text) *!/
     margin:-115px 0px 0px -112px;  /!* offset vertical: half of image height and text area height *!/
                                    /!* offset horizontal: half of text area width *!/
-}*/
+}
 
 /* Landscape layout (with min-width) */
-/*@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
         padding:75px 0px 75px 170px;  /!* padding-top + padding-bottom + text area = image height *!/
         margin:-90px 0px 0px -198px;  /!* offset vertical: half of image height *!/
                                       /!* offset horizontal: half of image width and text area width *!/
     }
-}*/
+}
 
 
 
@@ -84,7 +84,10 @@ body {
 
 span.custom-title{
     color: #ffffff;
-    padding: 5%;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     font-size: 350%;
     font-family: 'Quicksand', sans-serif !important;
 }
@@ -92,9 +95,7 @@ span.custom-title{
 h1 {
     font-size:24px;
     font-weight:normal;
-    margin:0px;
     overflow:visible;
-    padding:0px;
     text-align:center;
 }
 
@@ -105,7 +106,7 @@ h1 {
 .mdl-card {
     margin-left: auto;
     margin-right: auto;
-    height: 500px;!important;
+    height: 450px;!important;
 
 }
 
@@ -128,8 +129,8 @@ h1 {
 #gem-img {
     display: block;
     margin: 0 auto;
-    height: 150px;
-    width: 150px;
+    transition: opacity .25s ease-in-out;
+    animation: pulse 5s;
 }
 
 .mdl-button.mdl-button--accent {

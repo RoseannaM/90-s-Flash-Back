@@ -36,26 +36,26 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        $("#gem-img").attr("src","img/grey-round.png");
+        $("#gem-img").attr("src","img/grey-gem.png");
     },
 
     onTouch: function(){
         function successCallback(bpm){
             if (bpm <= 55){
                 $("#myBtn").empty().text("Your Mood:" + "You are sad. I'm sorry to hear that");
-                $("#gem-img").attr("src","img/blue-round.png");
+                $("#gem-img").attr("src","img/blue-gem.png");
             }
             else if (bpm >= 55 && bpm < 65) {
                 $("#myBtn").empty().text("Your Mood:" + "You seem skeptical, what? this is totally legit");
-                $("#gem-img").attr("src","img/orange-round.png");
+                $("#gem-img").attr("src","img/orange-gem.png");
             }
             else if (bpm >= 65 && bpm <85) {
                 $("#myBtn").empty().text("Your Mood:" + "You are happy. Good to hear");
-                $("#gem-img").attr("src","img/pink-round.png");
+                $("#gem-img").attr("src","img/pink-gem.png");
             }
             else if (bpm >= 85 && bpm <120) {
                 $("#myBtn").empty().text("Your Mood:" + "You are very excited, I know, i'm excited too");
-                $("#gem-img").attr("src","img/green-round.png");
+                $("#gem-img").attr("src","img/green-gem.png");
             }
         }
 
