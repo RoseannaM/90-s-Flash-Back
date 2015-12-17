@@ -42,37 +42,39 @@ var app = {
     onTouch: function(){
         function successCallback(bpm){
             if (bpm <= 55){
-                $("#myBtn").empty().text("Your Mood:" + "You are sad. I'm sorry to hear that");
+                $("#myBtn").empty().text("Your Mood: " + "You are sad. I'm sorry to hear that");
                 $("#gem-img").attr("src","img/blue-gem.png");
             }
-            else if (bpm >= 55 && bpm < 65) {
-                $("#myBtn").empty().text("Your Mood:" + "You seem skeptical, what? this is totally legit");
-                $("#gem-img").attr("src","img/orange-gem.png");
+            else if (bpm >= 55 && bpm < 68) {
+                $("#myBtn").empty().text("Your Mood: " + "Your aloof, and that's OK");
+                $("#gem-img").attr("src","img/purple-gem.png");
             }
-            else if (bpm >= 65 && bpm <85) {
-                $("#myBtn").empty().text("Your Mood:" + "You are happy. Good to hear");
+            else if (bpm >= 68 && bpm <81) {
+                $("#myBtn").empty().text("Your Mood: " + "You seem skeptical, what? this is totally legit");
+                $("#gem-img").attr("src","img/yellow-gem.png");
+            }
+            else if (bpm >= 81 && bpm <94) {
+                $("#myBtn").empty().text("Your Mood: " + "You are happy. Good to hear");
+                $("#gem-img").attr("src","img/green-gem.png");
+            }
+            else if (bpm >= 94 && bpm <107) {
+                $("#myBtn").empty().text("Your Mood: " + "You are very excited, I know, i'm excited too");
                 $("#gem-img").attr("src","img/pink-gem.png");
             }
-            else if (bpm >= 85 && bpm <120) {
-                $("#myBtn").empty().text("Your Mood:" + "You are very excited, I know, i'm excited too");
-                $("#gem-img").attr("src","img/green-gem.png");
+            else if (bpm >= 107 && bpm <120) {
+                $("#myBtn").empty().text("Your Mood: " + "You are angry. That sucks, sorry if this app made you angry");
+                $("#gem-img").attr("src","img/orange-gem.png");
             }
         }
 
         function errorCallback(){
-            var bpm = 70;
-           /* if (bpm >= 65 && bpm <85) {
-                $("#myBtn").empty().text("Your Mood:" + "You are happy. Good to hear");
-                $("#gem-img").attr("src", "img/pink-round.png");
-            }*/
-           alert("Unable to detect mood");
+            alert("Unable to detect mood");
         }
 
         var props = {
             seconds: 10,
             fps: 30
         };
-
         heartbeat.take(props, successCallback, errorCallback);
 
     }
@@ -81,24 +83,3 @@ var app = {
 app.initialize();
 
 
-
-
-
-
-/*$("#mood-text").empty().text("Your Mood:" + "");*/
-
-/*
-function test(){
-    $("#mood-text").empty().text("HEY, HI HELLO");
-}
-setTimeout(test, 2000);
-*/
-
-/*
-/!*(bpm <= 55)*!/ less than or equal to 55
-   (bpm >= 55 && <65)*!/ greater than 55 and less than 65?
-
-
- x >= y               # x is greater than or equal to y
- x <= y               # x is less than or equal to y
-*/

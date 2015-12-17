@@ -34,6 +34,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/material.css">
+        <link rel="stylesheet" href="css/animations.css">
         <script src="js/jQuery.js"></script>
         <title>Mood Ring</title>
     </head>
@@ -42,19 +43,16 @@
         <div class="mdl-cell mdl-cell--4-col">
             <header class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
                 <!-- Title -->
-                <span class="custom-title mdl-layout-title">MOOD RING</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
+                <span class="custom-title mdl-layout-title">MOOD GEM</span>
             </header>
         </div>
         <div class="mdl-cell mdl-cell--4-col">
             </div>
         <div class="mdl-cell mdl-cell--4-col">
             <div class="mdl-card mdl-shadow--2dp">
-                <button id ="myBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Place your finger on the camera</button>
+                <button id ="myBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Press here then place your finger on the camera</button>
                 <div class="mdl-card__title mdl-card--expand">
-                    <img id="gem-img" src="" class="center" >
+                    <img id="gem-img" src="" class="pulse">
                 </div>
                 <div id="mood-text"></div>
             </div>

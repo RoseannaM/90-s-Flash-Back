@@ -21,7 +21,7 @@
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
-    src: local('Quicksand Regular'), local('Quicksand-Regular'), url(fonts/FoglihtenNo04-070.otf ) format('woff2');
+    src: local('Quicksand Regular'), local('Quicksand-Regular'), url(fonts/Squares-Bold-Free.otf ) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -84,11 +84,8 @@ body {
 
 span.custom-title{
     color: #ffffff;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    font-size: 350%;
+    padding: 5%;
+    font-size: 300%;
     font-family: 'Quicksand', sans-serif !important;
 }
 
@@ -120,17 +117,14 @@ h1 {
     background-color: #dbdbdb;
     width: 100%;
 }
-/*h5 {
-    color: #FF8888;
-    font-size: small;
-    font-weight: bold;
-}*/
+
 
 #gem-img {
     display: block;
     margin: 0 auto;
     transition: opacity .25s ease-in-out;
     animation: pulse 5s;
+    animation-iteration-count: infinite;
 }
 
 .mdl-button.mdl-button--accent {
@@ -138,7 +132,7 @@ h1 {
     width: 100%;
     color: #03A9F4 !important;
     font-weight: bold;
-    background-color: #5310AB;
+    background-color: #3F51B5;
 }
 
 .mdl-button:active {
